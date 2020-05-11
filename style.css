@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightgreen;
+}
+
+.image-container {
+  background-color: lightcoral;
+  width: 45%;
+  transform: translateX(-50%);
+}
+
+.text-container {
+  background-color: lightblue;
+  width: 45%;
+  transform: translateX(50%);
+}
+
+/* Resets the translate value */
+.seen {
+  transform: translateX(0);
+
+  /* Listens to the transform property, so it change value smoothly */
+  transition: ease 2s transform;
+}
